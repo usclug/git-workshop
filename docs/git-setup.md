@@ -1,5 +1,5 @@
 #Git Installation Instructions
-This guide will assist you in installing git on your operating system of choice. You are advised to install git on all your machines. You will find below instructions for installing git on Linux, MacOS and Windows.
+This guide will assist you in installing git on your operating system of choice. You are advised to install git on all your machines. You will find below instructions for installing git on Linux, MacOS, Windows and aludra.
 
 ###Linux
 Almost all major Linux distributions have git as a package that you can install using their standard package manager software.
@@ -60,6 +60,7 @@ Now, install the the package you just downloaded using the default settings for 
 
 Along with the git commandline tools, the package you just installed will install a Unix/Linux-like terminal named **Git Bash**. This application will allow you to access git and all the tools and commands needed to get you started.
 
+####Test Your installation
 To see if git was properly installed you should take the following steps:
   1. Start &rarr; Git &rarr; Git Bash
   1. In Git Bash, type `git --version`
@@ -67,6 +68,33 @@ To see if git was properly installed you should take the following steps:
 The expected output for a successful installations is:
 ```
 git version 1.8.4
+```
+
+###aludra.usc.edu
+Aludra is one of the USC [Student Compute Facility](http://www.usc.edu/its/unix/servers/scf.html) clusters. git is already installed on aludra, however, you still need to configure your account to use it.
+
+You can configure your account to use git by appending the following to your `~/.cshrc` file:
+
+```bash
+# git setup
+if (-r /usr/usc/git/default/setup.csh) then
+	source /usr/usc/git/default/setup.csh
+endif
+```
+
+####Test Your installation
+To see if git was properly configured you should run the following commands:
+
+```bash
+#Load the new configuration (you can logout, then login again instead)
+source ~/.cshrc
+
+git --version
+```
+
+The expected output is:
+```
+git version 1.6.4.2
 ```
 
 ####See You @ The Workshop!
