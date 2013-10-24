@@ -37,6 +37,9 @@ When committing code in git, the system requires a commit message. If a message 
 #Pick your editor of choice to edit commit messages (not code)
 # Note that you should pick an editor that is installed on your machine
 git config --global core.editor emacs
+
+#You also need to define a merge tool
+git config --global merge.tool vimdiff
 ```
 
 Here, git will automatically launch `emacs`. You may want to change that to your editor of choice. Here are some examples (you only need one):
