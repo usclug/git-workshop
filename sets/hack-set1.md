@@ -36,7 +36,7 @@ git commit
 ```
 
 ###Merge
-``bash
+```bash
 git checkout master
 git merge
 git log --decorate --graph --stat
