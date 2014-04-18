@@ -11,7 +11,7 @@ tree .git
 
 ###Create a file
 ```bash
-emacs foo
+vi foo
 git add foo
 git commit
 ```
