@@ -4,7 +4,7 @@
 git config --global user.name "Tommy Trojan"
 git config --global user.email "ttrojan@usc.edu"
 git config --global color.ui auto
-git config --global core.editor emacs
+git config --global core.editor vi
 git config --global merge.tool vimdiff
 git config --global core.autocrlf input
 ```
